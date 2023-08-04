@@ -39,11 +39,49 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue-color);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--blue-alt-color);
+}
+
 .page{
     background-color: #f1f5f9;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 /* End global rules */
+
+/* Start components */
+.main-title::before,
+.main-title::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+}
+
+.main-title::before{
+    width: 70%;
+    background: white;
+}
+
+.main-title::after{
+    width: 25%;
+    background: black;
+}
+/* End components */
 
 /* Start sidebar */
 .sidebar{
