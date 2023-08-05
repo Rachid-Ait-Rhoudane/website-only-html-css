@@ -7,86 +7,105 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- Font awesome library -->
     <link rel="stylesheet" href="./css/all.min.css">
-    <!-- Our css framework -->
-    <link rel="stylesheet" href="./css/framework.css">
-    <!-- Main template css file -->
-    <link rel="stylesheet" href="./css/master.css">
     <!-- Google fonts: open sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
+     <!-- Main template css file -->
+     <link rel="stylesheet" href="./css/master.css">
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="page d-flex">
-        <div class="sidebar bg-white p-20 p-relative">
-            <h3 class="p-relative txt-c mt-0">Zewana</h3>
+    <div class="page">
+        <div class="sidebar">
+            <h3>Zewana</h3>
             <ul>
                 <li>
-                  <a class="active d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="index.html">
+                  <a class="active" href="index.html">
                     <i class="fa-regular fa-chart-bar fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Dashboard</span>
+                    <span>Dashboard</span>
                   </a>
                 </li>
                 <li>
-                  <a class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="#">
+                  <a href="#">
                     <i class="fa-solid fa-gear fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Settings</span>
+                    <span>Settings</span>
                   </a>
                 </li>
                 <li>
-                  <a class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="#">
+                  <a href="#">
                     <i class="fa-regular fa-user fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Profile</span>
+                    <span>Profile</span>
                   </a>
                 </li>
                 <li>
-                  <a class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="#">
+                  <a href="#">
                     <i class="fa-solid fa-diagram-project fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Projects</span>
+                    <span>Projects</span>
                   </a>
                 </li>
                 <li>
-                  <a class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="#">
+                  <a href="#">
                     <i class="fa-solid fa-graduation-cap fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Courses</span>
+                    <span>Courses</span>
                   </a>
                 </li>
                 <li>
-                  <a class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="#">
+                  <a href="#">
                     <i class="fa-regular fa-circle-user fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Friends</span>
+                    <span>Friends</span>
                   </a>
                 </li>
                 <li>
-                  <a class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="#">
+                  <a href="#">
                     <i class="fa-regular fa-file fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Files</span>
+                    <span>Files</span>
                   </a>
                 </li>
                 <li>
-                  <a class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5" href="#">
+                  <a href="#">
                     <i class="fa-regular fa-credit-card fa-fw"></i>
-                    <span class="fs-14 ml-5 hide-mobile">Plans</span>
+                    <span>Plans</span>
                   </a>
                 </li>
             </ul>
         </div>
-        <div class="content w-full overflow-h">
+        <div class="content">
             <!-- Start head -->
-                <div class="head bg-white p-15 between-flex">
-                    <div class="search p-relative">
-                        <input class="pl-30 p-10 rad-10 ml-5 border-ccc" type="text" placeholder="Type A Keyword">
+                <div class="head">
+                    <div class="search">
+                        <input type="text" placeholder="Type A Keyword">
                     </div>
-                    <div class="icons d-flex align-center">
-                        <span class="notification p-relative mr-15">
+                    <div class="icons">
+                        <span class="notification">
                             <i class="fa-regular fa-bell fa-lg"></i>
                         </span>
                         <img src="./images/avatar.png" alt="avatar">
                     </div>
                 </div>
             <!-- End head -->
-            <h1 class="main-title p-relative ml-20 w-fit">Dashboard</h1>
+            <h1 class="main-title">Dashboard</h1>
+            <div class="wrapper">
+              <!-- Start welcome -->
+              <div class="welcome">
+                <div class="intro">
+                  <div class="text">
+                    <h2>Welcome</h2>
+                    <span>Zewana</span>
+                  </div>
+                  <img src="./images/welcome.png" alt="welcome image">
+                </div>
+                <img class="welcome-avatar" src="./images/avatar.png" alt="welcome avatar">
+                <div class="body">
+                  <div>Rachid AIT RHOUDANE <span>Developer</span></div>
+                  <div>80 <span>Projects</span></div>
+                  <div>$8500 <span>Earned</span></div>
+                </div>
+                <a class="visit" href="profile.html">Profile</a>
+              </div>
+              <!-- End welcome -->
+
+            </div>
         </div>
     </div>
 </body>
