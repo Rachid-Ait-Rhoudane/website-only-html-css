@@ -193,6 +193,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 0 10px #ddd;
 }
 
 .content .head .search{
@@ -262,7 +263,7 @@ body{
 /* Start wrapper */
 .page .content .wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
     gap: 20px;
     margin: 0 20px 40px;
 }
@@ -647,6 +648,94 @@ body{
 }
 /* End tickets statistic */
 
+/* Start latest news */
+.latest-news{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+.latest-news h2{
+    margin: 20px 0 0 20px;
+}
+
+.latest-news .news{
+    margin: 20px 0 0 20px;
+}
+
+.latest-news .news .box{
+    display: flex;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.latest-news .news .box:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 767px){
+    .latest-news .news .box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.latest-news .news .box .image{
+    width: 90px;
+}
+
+.latest-news .news .box .image img{
+    max-width: 100%;
+    border-radius: var(--alt-border-radius);
+}
+
+.latest-news .news .box .info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+@media (max-width: 767px){
+    .latest-news .news .box .info{
+        padding-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.latest-news .news .box .info p:first-of-type{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.latest-news .news .box .info p:last-of-type{
+    font-size: 14px;
+    color: var(--grey-color);
+    margin: 5px 0 0;
+}
+
+.latest-news .news .box .info span{
+    position: absolute;
+    display: block;
+    width: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 14px;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: var(--alt-border-radius);
+}
+
+@media (max-width: 767px){
+    .latest-news .news .box .info span{
+        right: 50%;
+        transform: translateX(50%);
+        top: 70%;
+    }
+}
+/* End latest news */
 
 
 
