@@ -7,6 +7,9 @@
     --green-color: #22c55e;
     --red-color: #f44336;
     --grey-color: #888;
+    --main-padding-bottom: 60px;
+    --main-border-radius: 10px;
+    --alt-border-radius: 6px;
 }
 /* End variables */
 
@@ -155,7 +158,7 @@ body{
     align-items: center;
     font-size: 14px;
     color: black;
-    border-radius: 6px;
+    border-radius: var(--alt-border-radius);
     padding: 10px;
     margin: 0 0 5px;
     transition: 0.3s;
@@ -212,7 +215,7 @@ body{
     width: 160px;
     transition: width 0.3s;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: var(--main-border-radius);
     padding:10px 10px 10px 30px;
 }
 
@@ -278,8 +281,8 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 10px;
-    padding-bottom: 60px;
+    border-radius: var(--main-border-radius);
+    padding-bottom: var(--main-padding-bottom);
 }
 
 @media (max-width: 767px){
@@ -366,8 +369,8 @@ body{
     display: block;
     width: fit-content;
     padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 6px;
+    font-size: 14px;
+    border-radius: var(--alt-border-radius);
     background-color: var(--blue-color);
     color: white;
     align-self: flex-end;
@@ -376,6 +379,58 @@ body{
     right: 20px;
 }
 /* End welcome */
+
+/* Start quick draft */
+.quick-draft{
+    background-color: white;
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+}
+
+.quick-draft h2{
+    margin: 20px 0 0 20px;
+}
+
+.quick-draft span{
+    display: block;
+    color: var(--grey-color);
+    margin: 5px 0 0 20px;
+}
+
+.quick-draft form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.quick-draft form input[type="text"],
+.quick-draft form textarea{
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: var(--alt-border-radius);
+    background-color: #eee;
+}
+
+.quick-draft form textarea{
+    height: 60%;
+}
+
+.quick-draft form input[type="submit"]{
+    display: block;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: var(--alt-border-radius);
+    background-color: var(--blue-color);
+    color: white;
+    align-self: flex-end;
+}
+/* End quick draft */
+
 
 
 
