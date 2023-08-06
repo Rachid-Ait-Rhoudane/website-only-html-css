@@ -660,6 +660,9 @@ body{
 }
 
 .latest-news .news{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin: 20px 0 0 20px;
 }
 
@@ -839,7 +842,7 @@ body{
 .top-search-items .items{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
     margin: 20px 0 0 20px;
 }
 
@@ -857,6 +860,94 @@ body{
     font-size: 12px;
 }
 /* End top search items */
+
+/* Start latest uploads */
+.latest-uploads{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+.latest-uploads h2{
+    margin: 20px 0 0 20px;
+}
+
+.latest-uploads .uploads{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+}
+
+.latest-uploads .uploads .file{
+    display: flex;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+@media (max-width: 767px){
+    .latest-uploads .uploads .file{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.latest-uploads .uploads .file:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+.latest-uploads .uploads .file .icon{
+    width: 35px;
+}
+
+.latest-uploads .uploads .file .icon img{
+    max-width: 100%;
+}
+
+.latest-uploads .uploads .file .info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+@media (max-width: 767px){
+    .latest-uploads .uploads .file .info{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+.latest-uploads .uploads .file .info .title{
+    font-size: 18px;
+}
+
+.latest-uploads .uploads .file .info .person{
+    font-size: 14px;
+    color: var(--grey-color);
+    margin: 5px 0 0;
+}
+
+.latest-uploads .uploads .file .info .size{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: var(--alt-border-radius);
+    font-size: 12px;
+}
+
+@media (max-width: 767px){
+    .latest-uploads .uploads .file .info .size{
+        right: 50%;
+        transform: translateX(50%);
+        top: 70%;
+    }
+}
+
+/* End latest uploads */
 
 
 
