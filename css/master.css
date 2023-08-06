@@ -1169,6 +1169,144 @@ body{
 }
 /* End latest post */
 
+/* Start social media stats */
+.social-media-stats{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+.social-media-stats h2{
+    margin: 20px 0 0 20px;
+}
+
+.social-media-stats .social-media{
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-stats .social-media .social{
+    display: flex;
+}
+
+.social-media-stats .social-media .social .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.social-media-stats .social-media .social .icon:hover{
+    transform: translateX(2px) rotate(5deg);
+}
+
+.social-media-stats .social-media .social:first-of-type .icon{
+    background-color: #1da1f2;
+}
+
+.social-media-stats .social-media .social:nth-of-type(2) .icon{
+    background-color: var(--blue-color);
+}
+
+.social-media-stats .social-media .social:nth-of-type(3) .icon{
+    background-color: var(--red-color);
+}
+
+.social-media-stats .social-media .social:last-of-type .icon{
+    background-color: #0077b5;
+}
+
+.social-media-stats .social-media .social .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    color: white;
+    padding-left: 10px;
+}
+
+.social-media-stats .social-media .social:first-of-type .info{
+    background-color: rgb(29 161 242 / 20%);
+}
+
+.social-media-stats .social-media .social:nth-of-type(2) .info{
+    background-color: rgb(24 119 242 / 20%);
+}
+
+.social-media-stats .social-media .social:nth-of-type(3) .info{
+    background-color: rgb(255 0 0 / 20%);
+}
+
+.social-media-stats .social-media .social:last-of-type .info{
+    background-color: rgb(0 119 181 / 20%);   
+}
+
+.social-media-stats .social-media .social .info .followers{
+    font-weight: bold;
+}
+
+@media (max-width: 767px){
+    .social-media-stats .social-media .social .info .followers{
+        font-size: 14px;
+    }
+}
+.social-media-stats .social-media .social:first-of-type .info .followers,
+.social-media-stats .social-media .social:nth-of-type(2) .info .followers{
+    color: #1da1f2;
+}
+
+.social-media-stats .social-media .social:nth-of-type(3) .info .followers{
+    color: #ff0000;
+}
+
+.social-media-stats .social-media .social:last-of-type .info .followers{
+    color: #0077b5;   
+}
+
+
+.social-media-stats .social-media .social .info .action{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: var(--alt-border-radius);
+}
+
+@media (max-width: 767px){
+    .social-media-stats .social-media .social .info .action{
+        font-size: 12px;
+        right: 5px;
+    }
+}
+
+.social-media-stats .social-media .social:first-of-type .info .action{
+    background-color: #1da1f2;
+}
+
+.social-media-stats .social-media .social:nth-of-type(2) .info .action{
+    background-color: var(--blue-color);
+}
+
+.social-media-stats .social-media .social:nth-of-type(3) .info .action{
+    background-color: var(--red-color);
+}
+
+.social-media-stats .social-media .social:last-of-type .info .action{
+    background-color: #0077b5;
+}
+/* End social media stats */
+
+
 
 
 
