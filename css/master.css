@@ -946,8 +946,79 @@ body{
         top: 70%;
     }
 }
-
 /* End latest uploads */
+
+/* Start last project progress */
+.last-project-progress{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+    position: relative;
+}
+
+.last-project-progress h2{
+    margin: 20px 0 0 20px;
+}
+
+.last-project-progress .steps{
+    position: relative;
+    margin: 20px 0 0 60px;
+}
+
+.last-project-progress .steps::before{
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: var(--blue-color);
+}
+
+.last-project-progress .steps .step{
+    position: relative;
+    padding: 20px 0;
+}
+
+.last-project-progress .steps .step::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -41px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    transition:background-color 2s;
+}
+
+.last-project-progress .steps .step:nth-last-of-type(2):before{
+    background-color: white;
+    animation: signal 2s infinite;
+}
+
+@keyframes signal{
+    100%{
+        background-color: var(--blue-color);
+    }
+}
+.last-project-progress .steps .step:last-of-type:before{
+    background-color: white;
+}
+
+.last-project-progress img{
+    height: 150px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    opacity: 0.3;
+}
+/* End last project progress */
+
 
 
 
