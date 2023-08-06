@@ -1306,6 +1306,80 @@ body{
 }
 /* End social media stats */
 
+/* Start projects */
+.projects{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+@media (min-width: 1200px){
+    .projects{
+        grid-column: 1 / span 2;
+    }
+}
+
+.projects h2{
+    margin: 20px 0 0 20px;
+}
+
+.projects .table{
+    margin: 20px 0 0 20px;
+    width: calc(100% - 40px);
+    overflow-x: auto;
+    padding: 5px;
+}
+
+.projects table{
+    width: 100%;
+    border: 1px solid #eee;
+    border-spacing: 0;
+}
+
+.projects table thead tr{
+    background-color: #eee;
+}
+
+.projects table thead tr th{
+    text-align: left;
+    padding: 20px 30px;
+}
+
+.projects table tbody tr:hover{
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+.projects table tbody tr td {
+    position: relative;
+    text-align: left;
+    padding: 20px 30px;
+    border: 1px solid #eee;
+}
+
+.projects table tbody tr td img{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.projects table tbody tr td img:nth-of-type(2){
+    left: 30px;
+}
+
+.projects table tbody tr td img:nth-of-type(3){
+    left: 50px;
+}
+
+.projects table tbody tr td img:nth-of-type(4){
+    left: 70px;
+}
+/* End projects */
+
 
 
 
