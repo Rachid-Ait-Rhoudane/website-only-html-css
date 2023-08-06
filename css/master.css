@@ -1699,6 +1699,69 @@ body{
 }
 /* End security info */
 
+/* Start social info */
+.social-info{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+.social-info h2{
+    margin: 20px 0 0 20px;
+}
+
+.social-info h2 + p{
+    margin: 5px 20px 0 20px;
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+.social-info form{
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-info form .social{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.social-info form .social .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: var(--grey-color);
+    border-top-left-radius: var(--alt-border-radius);
+    border-bottom-left-radius: var(--alt-border-radius);
+}
+
+.social-info form .social input{
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top-right-radius: var(--alt-border-radius);
+    border-bottom-right-radius: var(--alt-border-radius);
+    background-color: #eee;
+}
+
+.social-info form .social input:focus + .icon{
+    color: black;
+}
+
+.social-info form .social input::placeholder{
+    font-size: 14px;
+}
+/* End social info */
+
 
 
 
