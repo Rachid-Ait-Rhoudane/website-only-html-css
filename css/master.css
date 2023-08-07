@@ -2210,6 +2210,45 @@ body{
 
 /* End profile */
 
+/* Start my skills */
+.my-skills{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+.my-skills h2{
+    margin: 20px 0 0 20px;
+}
+
+.my-skills h2 + p{
+    margin: 5px 20px 0 20px;
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+.my-skills ul{
+    margin: 20px 20px 0 20px;
+}
+
+.my-skills ul li{
+    padding: 20px 0;
+}
+
+.my-skills ul li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+
+.my-skills ul li span{
+    padding: 10px;
+    background-color: #eee;
+    border-radius: var(--alt-border-radius);
+    margin-right: 10px;
+
+}
+/* End my skills */
+
+
 
 
 
