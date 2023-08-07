@@ -1989,6 +1989,226 @@ body{
 }
 /* End backup manager */
 
+/* Start profile */
+.profile{
+    padding-bottom: var(--main-padding-bottom);
+    padding-top: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+    display: flex;
+}
+
+@media (min-width: 1200px){
+    .profile{
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (max-width: 1200px){
+    .profile{
+        justify-content: center;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px){
+    .profile{
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
+
+.profile .person{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 767px){
+    .profile .person{
+        width: 100%;
+    }
+}
+
+.profile .person .profile-image{
+    width: 150px;
+}
+
+.profile .person .profile-image img{
+    max-width: 100%;
+}
+
+.profile .person .name{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profile .person .level,
+.profile .person .rating-number{
+    color: var(--grey-color);
+}
+
+.profile .person .prog{
+    width: 60%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 50px;
+}
+
+.profile .person .prog span{
+    display: block;
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--blue-color);
+}
+
+.profile .person .rating i{
+    color: var(--orange-color);
+}
+
+.profile .info{
+    position: relative;
+}
+
+.profile .info::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1px;
+    width: 1px;
+    height: 70%;
+    background-color: #eee;
+
+}
+
+.profile .info .box{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile .info .box:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 1200px){
+    .profile .info .box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px){
+    .profile .info .box{
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px){
+    .profile .info .box .info-1,
+    .profile .info .box .info-2,
+    .profile .info .box .info-3{
+        width: 300px;
+    }
+    .profile .info {
+        flex: 1;
+    }
+}
+
+
+.profile .info .box .info-2,
+.profile .info .box .info-3{
+    display: flex;
+    align-items: center;
+}
+
+.profile .info .box .info-1 p span,
+.profile .info .box .info-2 span,
+.profile .info .box .info-3 span{
+    margin-right: 5px;
+    color: var(--grey-color);
+}
+
+.profile .info .box .info-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 767px){
+    .profile .info .box .info-1 {
+        align-items: center;
+    }
+}
+
+.profile .info .box .info-1 .title{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--grey-color);
+}
+
+.profile .info .box .info-1 .checkbox{
+    position: relative;
+}
+
+.profile .info .box .info-1 .checkbox input[type="checkbox"]{
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.profile .info .box .info-1 .checkbox .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 80px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #eee;
+    transition: 0.3s;
+}
+
+.profile .info .box .info-1 .checkbox .checkmark::before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    position: absolute;
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.profile .info .box .info-1 .checkbox input[type="checkbox"]:checked + .checkmark{
+    background-color: var(--blue-color);
+}
+
+.profile .info .box .info-1 .checkbox input[type="checkbox"]:checked + .checkmark::before{
+    content: "\f00c";
+    color: var(--blue-color);
+    left: 60px;
+}
+
+/* End profile */
+
 
 
 
