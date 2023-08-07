@@ -2248,6 +2248,103 @@ body{
 }
 /* End my skills */
 
+/* Start latest activities */
+.latest-activities{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+.latest-activities h2{
+    margin: 20px 0 0 20px;
+}
+
+.latest-activities h2 + p{
+    margin: 5px 20px 0 20px;
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+.latest-activities .activities{
+    margin: 20px 20px 0 0;
+}
+
+.latest-activities .activities .activity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+@media (max-width: 767px){
+    .latest-activities .activities .activity{
+        flex-direction: column;
+    }
+}
+
+.latest-activities .activities .activity:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+.latest-activities .activities .activity .image{
+    width: 65px;
+}
+
+.latest-activities .activities .activity .image img{
+    max-width: 100%;
+}
+
+.latest-activities .activities .activity .info{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+@media (max-width: 767px){
+    .latest-activities .activities .activity .info{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+.latest-activities .activities .activity .info span{
+    display: block;
+}
+
+.latest-activities .activities .activity .info .text,
+.latest-activities .activities .activity .info .date{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.latest-activities .activities .activity .info .text .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.latest-activities .activities .activity .info .text .description{
+    color: var(--grey-color);
+}
+
+.latest-activities .activities .activity .info .date .time{
+    text-align: right;
+}
+
+@media (max-width: 767px){
+    .latest-activities .activities .activity .info .date .time{
+        text-align: center;
+    }
+}
+
+.latest-activities .activities .activity .info .date .day{
+    color: var(--grey-color);
+}
+/* End latest activities */
+
+
 
 
 
