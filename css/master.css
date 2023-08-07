@@ -1991,8 +1991,6 @@ body{
 
 /* Start profile */
 .profile{
-    padding-bottom: var(--main-padding-bottom);
-    padding-top: var(--main-padding-bottom);
     border-radius: var(--main-border-radius);
     background-color: white;
     display: flex;
@@ -2006,7 +2004,6 @@ body{
 
 @media (max-width: 1200px){
     .profile{
-        justify-content: center;
         font-size: 14px;
     }
 }
@@ -2019,6 +2016,7 @@ body{
 }
 
 .profile .person{
+    margin: 10px 0;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -2071,6 +2069,7 @@ body{
 
 .profile .info{
     position: relative;
+    flex: 1;
 }
 
 .profile .info::before{
@@ -2091,6 +2090,10 @@ body{
     padding: 20px;
 }
 
+.profile .info .box:hover{
+    background-color: rgba(255, 0, 0, 0.08);
+}
+
 .profile .info .box:not(:last-of-type){
     border-bottom: 1px solid #eee;
 }
@@ -2098,6 +2101,7 @@ body{
 @media (max-width: 1200px){
     .profile .info .box {
         flex-direction: column;
+        width: 100%;
     }
 }
 
@@ -2112,9 +2116,6 @@ body{
     .profile .info .box .info-2,
     .profile .info .box .info-3{
         width: 300px;
-    }
-    .profile .info {
-        flex: 1;
     }
 }
 
