@@ -2910,6 +2910,127 @@ body{
 }
 /* End files */
 
+/* Start plans */
+.plan{
+    padding: 20px;
+    border-radius: var(--main-border-radius);
+    background-color: white;
+}
+
+.plan .plan-header{
+    border: 2px solid white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.plan:first-of-type .plan-header{
+    background-color: var(--green-color);
+    outline: 2px solid var(--green-color);
+}
+
+.plan:nth-of-type(2) .plan-header{
+    background-color: var(--blue-color);
+    outline: 2px solid var(--blue-color);
+}
+
+.plan:last-of-type .plan-header{
+    background-color: var(--orange-color);
+    outline: 2px solid var(--orange-color);
+}
+
+.plan .plan-header span{
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+.plan .plan-header span:first-of-type{
+    font-size: 25px;
+}
+
+.plan .plan-header .price{
+    position: relative;
+    font-size: 52px;
+}
+
+@media (max-width: 767px){
+    .plan .plan-header span:first-of-type{
+        font-size: 18px;
+    }
+    
+    .plan .plan-header .price{
+        position: relative;
+        font-size: 32px;
+    }
+}
+
+.plan .plan-header .price .dollar{
+    position: absolute;
+    top: -5px;
+    left: -15px;
+}
+
+.plan ul li{
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 767px){
+    .plan ul li{
+        font-size: 14px;
+    }
+}
+
+.plan ul li i.yes{
+    color: var(--green-color);
+    margin-right: 10px;
+}
+
+.plan ul li i.fa-xmark{
+    color: var(--red-color);
+    margin-right: 10px;
+}
+
+.plan ul li i.help{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: var(--grey-color);
+}
+
+.plan .join{
+    display: block;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: var(--alt-border-radius);
+    color: white;
+}
+
+.plan:first-of-type .join{
+    background-color: var(--green-color);
+}
+
+.plan:nth-of-type(2) .join{
+    background-color: var(--blue-color);
+}
+
+.plan:last-of-type .join{
+    background-color: var(--orange-color);
+}
+
+/* End plans */
+
+
 
 
 
