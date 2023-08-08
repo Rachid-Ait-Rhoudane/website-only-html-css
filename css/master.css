@@ -2344,6 +2344,145 @@ body{
 }
 /* End latest activities */
 
+/* Start projects box */
+.project-box{
+    padding-bottom: var(--main-padding-bottom);
+    border-radius: var(--main-border-radius);
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.project-box .title{
+    display: block;
+}
+
+.project-box .title + p{
+    margin: 10px 0 60px 0;
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+.project-box .date{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--grey-color);
+}
+
+.project-box .images{
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.project-box .images img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.project-box .images img:hover{
+    z-index: 1;
+}
+
+.project-box .images img:first-of-type{
+    left: 0;
+}
+
+.project-box .images img:nth-of-type(2){
+    left: 25px;
+}
+
+.project-box .images img:nth-of-type(3){
+    left: 50px;
+}
+
+.project-box .images img:nth-of-type(4){
+    left: 75px;
+}
+
+.project-box .images img:nth-of-type(5){
+    left: 95px;
+}
+
+.project-box .skills{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.project-box .skills span{
+    display: block;
+    padding: 5px 10px;
+    background-color: #eee;
+    font-size: 14px;
+    border-radius: var(--alt-border-radius);
+    margin-left: 10px;
+}
+
+@media (max-width: 767px){
+    .project-box .skills{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+
+    .project-box .skills span{
+        margin: 0 0 10px 0;
+    }
+}
+
+.project-box .bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 0 20px;
+}
+
+@media (max-width: 767px){
+    .project-box .bar{
+        flex-direction: column;
+    }
+}
+
+.project-box .bar .prog{
+    height: 10px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: #eee;
+}
+
+@media (max-width: 767px){
+    .project-box .bar{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-box .bar .prog{
+        width: 250px;
+    }
+}
+
+.project-box .bar .prog span{
+    display: block;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.project-box .bar .price{
+    color: var(--grey-color);
+}
+/* End projects box */
+
 
 
 
