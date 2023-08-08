@@ -2484,7 +2484,7 @@ body{
 /* End projects box */
 
 /* Start courses */
-.courses-wrapper{
+.wrapper-3{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(307px, 1fr));
     gap: 20px;
@@ -2492,30 +2492,30 @@ body{
 }
 
 @media (max-width: 767px){
-    .courses-wrapper{
+    .wrapper-3{
         grid-template-columns: minmax(200px, 1fr);
         margin: 40px 10px 0 10px;
     }
 }
 
-.courses-wrapper .courses-box{
+.wrapper-3 .courses-box{
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: var(--main-border-radius);
 }
 
-.courses-wrapper .courses-box .image{
+.wrapper-3 .courses-box .image{
     position: relative;
 }
 
-.courses-wrapper .courses-box .image img:not(.person-avatar){
+.wrapper-3 .courses-box .image img:not(.person-avatar){
     width: 100%;
     border-top-left-radius: var(--main-border-radius);
     border-top-right-radius: var(--main-border-radius);
 }
 
-.courses-wrapper .courses-box .image .person-avatar{
+.wrapper-3 .courses-box .image .person-avatar{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -2524,26 +2524,26 @@ body{
     border: 2px solid white;
 }
 
-.courses-wrapper .courses-box .text{
+.wrapper-3 .courses-box .text{
     position: relative;
     padding: 20px;
     border-bottom: 1px solid #eee;
 }
 
-.courses-wrapper .courses-box .text .title{
+.wrapper-3 .courses-box .text .title{
     display: block;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.courses-wrapper .courses-box .text .description{
+.wrapper-3 .courses-box .text .description{
     font-size: 15px;
     line-height: 1.4;
     color: var(--grey-color);
 }
 
-.courses-wrapper .courses-box .text .info{
+.wrapper-3 .courses-box .text .info{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -2555,7 +2555,7 @@ body{
     font-size: 12px;
 }
 
-.courses-wrapper .footer{
+.wrapper-3 .footer{
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
